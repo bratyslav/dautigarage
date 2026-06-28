@@ -126,9 +126,10 @@
 
                 <nav class="s-header__nav" aria-label="Navigimi kryesor">
                     <ul>
-                        <li class="current"><a href="#intro" class="smoothscroll">Hyrje</a></li>
-                        <li><a href="#about" class="smoothscroll">Rreth Nesh</a></li>
-                        <li><a href="#pricing" class="smoothscroll">Katalogu</a></li>
+                        <li class="current"><a class="smoothscroll" href="#intro">Hyrje</a></li>
+                        <li><a class="smoothscroll" href="#about">Rreth Nesh</a></li>
+                        <li><a class="smoothscroll" href="#testimonials">Vlerësimet</a></li>
+                        <li><a class="smoothscroll" href="#footer">Kontakt</a></li>
                     </ul>
                 </nav>
 
@@ -164,7 +165,7 @@
                             </p> 
 
                             <div class="s-intro__content-buttons">
-                                <a href="#download" class="btn btn--primary s-intro__content-btn smoothscroll">Na Kontaktoni</a>
+                                <a href="#CTA" class="btn btn--primary s-intro__content-btn smoothscroll">Na Kontaktoni</a>
                             </div>
                         </div>
                     </div> <!-- s-intro__content-inner -->
@@ -390,7 +391,7 @@
 
             <!-- testimonials
             ----------------------------------------------- -->
-            <section id="testimonials" class="s-testimonials" aria-label="Vlerësimet e klientëve">
+            <section id="testimonials" class="s-testimonials target-section" aria-label="Vlerësimet e klientëve">
 
                 <div class="row narrow text-center s-testimonials__header">
                     <div class="column lg-12">
@@ -471,21 +472,21 @@
                     </div> <!-- end column -->
                 </div> <!-- end s-testimonials__content -->
 
-            </section> <!-- end testimonials -->
-
-            <!-- contact / CTA
-            ----------------------------------------------- -->
-            <section id="download" class="s-download target-section" aria-label="Na Kontaktoni">
-                <div class="row s-download__header">
-                    <div class="column lg-12">
-                        <h2 class="text-display-1">Gjeni Makinën Tuaj të Ëndrrave Sot!</h2>
-                        <p class="lead">
-                            Me mbi 328 automjete luksoze të shitura dhe 296 klientë të kënaqur,
-                            jemi zgjedhja e besuar për blerjen tuaj të ardhshme. Kontaktoni ekipin tonë
-                            për një konsultim falas dhe personal.
-                        </p>
+                <!-- contact / CTA
+                ----------------------------------------------- -->
+                <section id="CTA" class="s-download target-section" aria-label="Na Kontaktoni">
+                    <div class="row s-download__header">
+                        <div class="column lg-12">
+                            <h2 class="text-display-1">Gjeni Makinën Tuaj të Ëndrrave Sot!</h2>
+                            <p class="lead">
+                                Me mbi 328 automjete luksoze të shitura dhe 296 klientë të kënaqur,
+                                jemi zgjedhja e besuar për blerjen tuaj të ardhshme. Kontaktoni ekipin tonë
+                                për një konsultim falas dhe personal.
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </section>
+
             </section>
 
 
@@ -494,32 +495,8 @@
 
         <!-- # site-footer
         ================================================== -->
-        <footer id="colophon" class="s-footer footer" role="contentinfo">
+        <footer id="footer" class="s-footer footer target-section" role="contentinfo">
 
-            <div class="row s-footer__top">
-                <div class="column lg-12 text-center">
-                    <h2 class="text-display-1">
-                        Regjistrohu në Buletinin Tonë.
-                    </h2>
-                    <p class="lead">
-                        Abonohu për të marrë oferta ekskluzive dhe makina të reja në stok.
-                    </p>
-                </div>
-                <div class="column lg-12 s-footer__subscribe">
-                    <div class="subscribe-form">
-                        <form id="mc-form" class="mc-form" novalidate>
-                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center"
-                                   placeholder="Adresa juaj e Email-it"
-                                   title="The domain portion of the email address is invalid (the portion after the @)."
-                                   pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                                   required aria-label="Adresa juaj e email-it">
-                            <input type="submit" name="subscribe" value="Abonohu" class="btn btn--primary u-fullwidth">
-                            <div class="mc-status" role="status" aria-live="polite"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-    
             <div class="row s-footer__bottom">
                 <div class="column lg-5 md-6 stack-on-900">
                     <div class="footer__logo">
@@ -560,9 +537,8 @@
                         <ul class="s-footer__site-links">
                             <li><a class="smoothscroll" href="#intro" title="Hyrje">Hyrje</a></li>
                             <li><a class="smoothscroll" href="#about" title="Rreth Nesh">Rreth Nesh</a></li>
-                            <li><a class="smoothscroll" href="#testimonials" title="Vlerësime">Vlerësime</a></li>
-                            <li><a class="smoothscroll" href="#pricing" title="Katalogu">Katalogu</a></li>
-                            <li><a class="smoothscroll" href="#download" title="Kontakt">Kontakt</a></li>
+                            <li><a class="smoothscroll" href="#testimonials" title="Vlerësime">Vlerësimet</a></li>
+                            <li><a class="smoothscroll" href="#CTA" title="Kontakt">Kontakt</a></li>
                         </ul>
                     </nav>
     
